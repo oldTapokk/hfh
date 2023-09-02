@@ -1,17 +1,15 @@
 class Car:
-    color = "white"
+    def __init__(self, model, color, year):
+        self.model = model
+        self.year = year
+        self.color = color
+    def show_info(self):
+        print('model:', self.model)
+        print('year:', self.year)
+        print('color:', self.color)
 
-def __init__(self, model, color, year):
-    self.model = model
-    self.year = year
-    self.color = color
-def show_info(self):
-    print('model:', self.model)
-    print('year:', self.year)
-    print('color:', self.color)
-
-def set_color(self, newColor):
-    self.color = newColor
+    def set_color(self, newColor):
+        self.color = newColor
 
 
 myCar = Car('audi', '2021', 'red')
